@@ -4,7 +4,7 @@
 const API_KEY = "8f936ed8b428828089878f4f2885f49d";
 // API-UL meu 8f936ed8b428828089878f4f2885f49d
 // Construim link-urile (andpoint-urile) serverelor de la care vom primi date.
-function getCurrentWeatherEnpoint(city) {
+function getCurrentWeatherEndpoint(city) {
   // Intotdeauna, cand folosim un API, putem obtine informatii extra prin query params.
   // lang=ro => Rezultatele vin in romana.
   // units=metric => Unitatea de masura va fi grade celsius.

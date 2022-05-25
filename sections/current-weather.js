@@ -11,6 +11,7 @@ function displayCurrentWeather(city = "București") {
       const { name, dt, main, weather, wind } = data;
       // getDayOfTheWeek si getHour sunt creata de noi, in utils/date.
       const day = getDayOfTheWeek(dt);
+      const hours = getHour(dt);
       // Rotunjim temperaturile.
       const temperature = Math.round(main.temp);
       const realFeel = Math.round(main.feels_like);
