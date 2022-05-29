@@ -43,9 +43,9 @@ function displayWeatherForecast(city) {
             <div>
               <span>${hours}</span>
               <img src="${weatherIcon}" alt="" />
-              <strong>${temperature}</strong>
+              <strong>${temperature} °C</strong>
               <span>${weatherDescription}</span>
-              <span>Real feel: ${realFeel}°C</span>
+              <span> Real feel: ${realFeel}°C</span>
 
             </div>
           `;
