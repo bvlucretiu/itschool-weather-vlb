@@ -1,12 +1,12 @@
 // Declararea functiei pentru afisarea vremii curente. Apelul se face in alte fisiere.
-function displayCurrentWeather(city = "București") {
+function displayCurrentWeather(city) {
   // Generam link-ul serverului, pe baza orasului.
   const currentWeatherEndpoint = getCurrentWeatherEndpoint(city);
 
   fetch(currentWeatherEndpoint)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      //console.log(data);
       // Extragem proprietatile care ne intereseaza.
       const { name, dt, main, weather, wind } = data;
       // getDayOfTheWeek si getHour sunt creata de noi, in utils/date.
