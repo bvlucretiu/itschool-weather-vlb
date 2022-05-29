@@ -45,7 +45,7 @@ function displayWeatherForecast(city) {
               <img src="${weatherIcon}" alt="" />
               <strong>${temperature} °C</strong>
               <span>${weatherDescription}</span>
-              <span> Real feel: ${realFeel}°C</span>
+              <span> Senzație reală: ${realFeel}°C</span>
 
             </div>
           `;

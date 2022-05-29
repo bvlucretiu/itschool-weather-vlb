@@ -33,7 +33,7 @@ function displayCurrentWeather(city) {
           </div>
         </div>
         <div class="px-3">
-          <p class="fs-5">Real feel: <strong>${realFeel}°C</strong></p>
+          <p class="fs-5">Senzație reală: <strong>${realFeel}°C</strong></p>
           <p class="fs-5 text-capitalize">${weatherDescription}</p>
           <p class="fs-5">Vânt: <strong>${windSpeed} km/h</strong></p>
         </div>
