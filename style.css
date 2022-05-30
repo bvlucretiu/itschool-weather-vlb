@@ -83,3 +83,10 @@ header {
   background-color: #101d42;
   color: white;
 }
+.oneWeather {
+  background-color: rgb(150, 228, 226);
+  border: solid 1px;
+  margin: 5px;
+  border-radius: 12px;
+  padding: 10px;
+}

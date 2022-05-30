@@ -24,19 +24,24 @@ function displayCurrentWeather(city) {
       // Afisam pe ecran informatiile extrase din API.
       let currentWeatherContainer = document.querySelector(".current-weather");
       currentWeatherContainer.innerHTML = `
-        <div class="px-3">
-          <div class="fs-2 mb-2"><strong>${name}</strong></div>
-          <div class="fs-4"><strong>${day}</strong>, ${hours}</div>
-          <div class="d-flex align-items-center justify-content-center">
-            <strong class="fs-1">${temperature}°C</strong>
-            <img src="${weatherIcon}" />
-          </div>
-        </div>
-        <div class="px-3">
-          <p class="fs-5">Senzație reală: <strong>${realFeel}°C</strong></p>
-          <p class="fs-5 text-capitalize">${weatherDescription}</p>
-          <p class="fs-5">Vânt: <strong>${windSpeed} km/h</strong></p>
-        </div>
+      <div class="px-3">
+      <div class="fs-2 mb-2"><strong>${name}</strong></div>
+      <div class="fs-4"><strong>${day}</strong>, ${hours}</div>
+      <div class="d-flex align-items-center justify-content-center">
+      <strong id="currentTemperature" class="fs-1">${temperature}°C</strong>
+      <img src="${weatherIcon}" />
+      </div>
+      </div>
+      <div class="px-3">
+      <p class="fs-5">Senzație reală: <strong>${realFeel}°C</strong></p>
+      <p class="fs-5 text-capitalize">${weatherDescription}</p>
+      <p class="fs-5">Vânt: <strong>${windSpeed} km/h</strong></p>
+      </div>
       `;
+      if (temperature < 20) {
+        document.getElementById("currentTemperature").style.color = "blue";
+      } else if (temperature >= 20) {
+        document.getElementById("currentTemperature").style.color = "red";
+      }
     });
 }

@@ -2,8 +2,12 @@ let scrollToTopButton = document.querySelector(".scroll-to-top");
 console.log(scrollToTopButton);
 
 function handleScroll() {
-  console.log(window.scrollY);
-  if (window.scrollY > 200) {
+  if (window.scrollY > 600) {
+    console.log(">600");
+  } else if (window.scrollY < 600) {
+    console.log("<600");
+  }
+  if (window.scrollY > 600) {
     scrollToTopButton.style.display = "block";
   } else {
     scrollToTopButton.style.display = "none";

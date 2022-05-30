@@ -29,7 +29,7 @@ function displayWeatherForecast(city) {
         const dayOfTheWeek = property;
         const forecastList = forecastPerDay[property];
 
-        weatherForecastContainer.innerHTML += `<h2>${dayOfTheWeek}</h2>`;
+        weatherForecastContainer.innerHTML += `<h2 class="dayForecast">${dayOfTheWeek}</h2>`;
         forecastList.forEach((forecast) => {
           const { dt, main, weather } = forecast;
 
@@ -40,7 +40,7 @@ function displayWeatherForecast(city) {
           const weatherIcon = getWeatherIcon(weather[0].icon);
 
           weatherForecastContainer.innerHTML += `
-            <div>
+            <div class="oneWeather">
               <span>${hours}</span>
               <img src="${weatherIcon}" alt="" />
               <strong>${temperature} °C</strong>
