@@ -23,9 +23,22 @@
 }
 
 .bg-secondary {
+  max-width: 90%;
+  margin: 10%;
   background-color: #dfedf5 !important;
+  box-shadow: 5px 10px #888888;
+  border-radius: 2%;
 }
-
+.bg-forecast {
+  max-width: 98%;
+  margin: 3%;
+  background-color: #eddcee !important;
+  border-radius: 5px;
+}
+.container {
+  display: block;
+  justify-content: center;
+}
 .bg-dark {
   background-color: #101d42 !important;
 }
@@ -86,7 +99,18 @@ header {
 .oneWeather {
   background-color: rgb(150, 228, 226);
   border: solid 1px;
-  margin: 5px;
+  margin: 15px;
   border-radius: 12px;
   padding: 10px;
+  box-shadow: 2px 4px #888888;
+}
+.dayForecast {
+  max-width: 400px;
+  background-color: rgb(36, 248, 245);
+  border: solid 1px;
+  margin: 15px;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 2px 5px #888888;
+  text-align: center;
 }
