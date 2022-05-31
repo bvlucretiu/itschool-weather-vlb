@@ -27,7 +27,7 @@
   margin: 10%;
   background-color: #dfedf5 !important;
   box-shadow: 5px 10px #888888;
-  border-radius: 2%;
+  border-radius: 5px;
 }
 .bg-forecast {
   max-width: 98%;
