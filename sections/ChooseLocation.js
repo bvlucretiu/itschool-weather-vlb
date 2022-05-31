@@ -3,6 +3,7 @@ const timisoara = document.querySelector(".dropdown-menu .timisoara");
 const oradea = document.querySelector(".dropdown-menu .oradea");
 const arad = document.querySelector(".dropdown-menu .arad");
 const sibiu = document.querySelector(".dropdown-menu .sibiu");
+const clujNapoca = document.querySelector(".dropdown-menu .cluj-napoca");
 
 function updateCurrentCity(city) {
   // Selectam spatiul de pe ecran dedicat afisarii orasului curent si ii adaugam continut.
@@ -35,4 +36,7 @@ arad.addEventListener("click", function () {
 });
 sibiu.addEventListener("click", function () {
   updateWeather("Sibiu");
+});
+clujNapoca.addEventListener("click", function () {
+  updateWeather("Cluj-Napoca");
 });

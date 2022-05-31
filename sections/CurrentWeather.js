@@ -14,6 +14,9 @@ function displayCurrentWeather(city) {
       const hours = getHour(dt);
       // Rotunjim temperaturile.
       const temperature = Math.round(main.temp);
+      const temperatureFahrenheit = Math.round(
+        (9 / 5) * Math.round(main.temp) + 32
+      );
       const realFeel = Math.round(main.feels_like);
       // Atentie! weather este un array, cu un singur element.
       const weatherDescription = weather[0].description;
@@ -28,7 +31,9 @@ function displayCurrentWeather(city) {
       <div class="fs-2 mb-2"><strong>${name}</strong></div>
       <div class="fs-4"><strong>${day}</strong>, ${hours}</div>
       <div class="d-flex align-items-center justify-content-center">
-      <strong id="currentTemperature" class="fs-1">${temperature}°C</strong>
+      <strong id="currentTemperature" class="fs-1">${temperature}°C = </strong> 
+      <strong id="currentTemperatureFahrenheit"class="fs-1"> ${temperatureFahrenheit}°F</strong>
+
       <img src="${weatherIcon}" />
       </div>
       </div>
@@ -42,6 +47,13 @@ function displayCurrentWeather(city) {
         document.getElementById("currentTemperature").style.color = "blue";
       } else if (temperature >= 20) {
         document.getElementById("currentTemperature").style.color = "red";
+      }
+      if (temperatureFahrenheit < 68) {
+        document.getElementById("currentTemperatureFahrenheit").style.color =
+          "blue";
+      } else if (temperatureFahrenheit >= 68) {
+        document.getElementById("currentTemperatureFahrenheit").style.color =
+          "red";
       }
     });
 }
