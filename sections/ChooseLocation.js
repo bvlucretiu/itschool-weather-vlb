@@ -4,6 +4,7 @@ const oradea = document.querySelector(".dropdown-menu .oradea");
 const arad = document.querySelector(".dropdown-menu .arad");
 const sibiu = document.querySelector(".dropdown-menu .sibiu");
 const clujNapoca = document.querySelector(".dropdown-menu .cluj-napoca");
+const sanmartin = document.querySelector(".dropdown-menu .sanmartin");
 
 function updateCurrentCity(city) {
   // Selectam spatiul de pe ecran dedicat afisarii orasului curent si ii adaugam continut.
@@ -39,4 +40,7 @@ sibiu.addEventListener("click", function () {
 });
 clujNapoca.addEventListener("click", function () {
   updateWeather("Cluj-Napoca");
+});
+sanmartin.addEventListener("click", function () {
+  updateWeather("Sânmartin");
 });
