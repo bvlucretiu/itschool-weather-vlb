@@ -32,7 +32,7 @@ function displayWeatherForecast(city) {
         weatherForecastContainer.innerHTML += `<h2 class="dayForecast">${dayOfTheWeek}</h2>`;
         forecastList.forEach((forecast) => {
           const { dt, main, weather } = forecast;
-
+          const day = getDayOfTheWeek(dt);
           const hours = getHour(dt);
           const temperature = Math.round(main.temp);
           const realFeel = Math.round(main.feels_like);
@@ -41,6 +41,7 @@ function displayWeatherForecast(city) {
 
           weatherForecastContainer.innerHTML += `
             <div class="oneWeather">
+              <span>${day}</span></br>
               <span>${hours}</span>
               <img src="${weatherIcon}" alt="" />
               <strong>${temperature} °C</strong>
