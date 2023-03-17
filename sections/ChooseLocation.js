@@ -8,6 +8,7 @@ const sanmartin = document.querySelector(".dropdown-menu .sanmartin");
 const rontau = document.querySelector(".dropdown-menu .rontau");
 const hidiseludejos = document.querySelector(".dropdown-menu .hidiseludejos");
 const lazareni = document.querySelector(".dropdown-menu .lazareni");
+const balnaca = document.querySelector(".dropdown-menu .balnaca");
 const cortina_D_Ampezzo = document.querySelector(".dropdown-menu .cortina-dAmpezzo");
 
 function updateCurrentCity(city) {
@@ -55,7 +56,10 @@ hidiseludejos.addEventListener("click", function () {
   updateWeather("Hidișelu de Jos");
 });
 lazareni.addEventListener("click", function () {
-  updateWeather("Hidișelu de Jos");
+  updateWeather("Lăzăreni");
+});
+balnaca.addEventListener("click", function () {
+  updateWeather("Bălnaca");
 });
 cortina_D_Ampezzo.addEventListener("click", function () {
   updateWeather("Cortina d'Ampezzo, IT");
