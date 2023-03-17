@@ -6,6 +6,7 @@ const sibiu = document.querySelector(".dropdown-menu .sibiu");
 const clujNapoca = document.querySelector(".dropdown-menu .cluj-napoca");
 const sanmartin = document.querySelector(".dropdown-menu .sanmartin");
 const rontau = document.querySelector(".dropdown-menu .rontau");
+const hidiseludejos = document.querySelector(".dropdown-menu .hidiseludejos");
 const cortina_D_Ampezzo = document.querySelector(".dropdown-menu .cortina-dAmpezzo");
 
 function updateCurrentCity(city) {
@@ -48,6 +49,9 @@ sanmartin.addEventListener("click", function () {
 });
 rontau.addEventListener("click", function () {
   updateWeather("Rontău");
+});
+hidiseludejos.addEventListener("click", function () {
+  updateWeather("Hidișelu de Jos");
 });
 cortina_D_Ampezzo.addEventListener("click", function () {
   updateWeather("Cortina d'Ampezzo, IT");
