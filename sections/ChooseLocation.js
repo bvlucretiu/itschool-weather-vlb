@@ -5,6 +5,7 @@ const arad = document.querySelector(".dropdown-menu .arad");
 const sibiu = document.querySelector(".dropdown-menu .sibiu");
 const clujNapoca = document.querySelector(".dropdown-menu .cluj-napoca");
 const sanmartin = document.querySelector(".dropdown-menu .sanmartin");
+const cortina_D_Ampezzo = document.querySelector(".dropdown-menu .cortina-dAmpezzo");
 
 function updateCurrentCity(city) {
   // Selectam spatiul de pe ecran dedicat afisarii orasului curent si ii adaugam continut.
@@ -43,4 +44,7 @@ clujNapoca.addEventListener("click", function () {
 });
 sanmartin.addEventListener("click", function () {
   updateWeather("Sânmartin");
+});
+cortina_D_Ampezzo.addEventListener("click", function () {
+  updateWeather("Cortina d'Ampezzo, IT");
 });
