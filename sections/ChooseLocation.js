@@ -2,7 +2,6 @@ const bucharest = document.querySelector(".dropdown-menu .bucharest");
 const timisoara = document.querySelector(".dropdown-menu .timisoara");
 const oradea = document.querySelector(".dropdown-menu .oradea");
 const arad = document.querySelector(".dropdown-menu .arad");
-const sibiu = document.querySelector(".dropdown-menu .sibiu");
 const clujNapoca = document.querySelector(".dropdown-menu .cluj-napoca");
 const sanmartin = document.querySelector(".dropdown-menu .sanmartin");
 const rontau = document.querySelector(".dropdown-menu .rontau");
@@ -39,9 +38,6 @@ oradea.addEventListener("click", function () {
 });
 arad.addEventListener("click", function () {
   updateWeather("Arad");
-});
-sibiu.addEventListener("click", function () {
-  updateWeather("Sibiu");
 });
 clujNapoca.addEventListener("click", function () {
   updateWeather("Cluj-Napoca");
