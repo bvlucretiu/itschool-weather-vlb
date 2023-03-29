@@ -1,5 +1,5 @@
 function displayWeatherForecast(city) {
-  const preselect = localStorage.getItem("city");
+  const preselectLoc = localStorage.getItem("city");
   const weatherForecastEndpoint = getForecastEndpoint(city);
 
   fetch(weatherForecastEndpoint)
@@ -43,7 +43,7 @@ function displayWeatherForecast(city) {
 
           weatherForecastContainer.innerHTML += `
             <div class="oneWeather">
-              <span><b>${preselect}</b></span></br>
+              <span><b>${preselectLoc}</b></span></br>
               <span>${day}</span></br>
               <span>${hours}</span>
               <img src="${weatherIcon}" alt="" />
