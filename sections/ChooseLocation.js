@@ -8,6 +8,7 @@ const rontau = document.querySelector(".dropdown-menu .rontau");
 const hidiseludejos = document.querySelector(".dropdown-menu .hidiseludejos");
 const lazareni = document.querySelector(".dropdown-menu .lazareni");
 const balnaca = document.querySelector(".dropdown-menu .balnaca");
+const ginta = document.querySelector(".dropdown-menu .ginta");
 const cortina_D_Ampezzo = document.querySelector(".dropdown-menu .cortina-dAmpezzo");
 
 function updateCurrentCity(city) {
@@ -56,6 +57,9 @@ lazareni.addEventListener("click", function () {
 });
 balnaca.addEventListener("click", function () {
   updateWeather("Bălnaca");
+});
+ginta.addEventListener("click", function () {
+  updateWeather("Ginta");
 });
 cortina_D_Ampezzo.addEventListener("click", function () {
   updateWeather("Cortina d'Ampezzo, IT");
