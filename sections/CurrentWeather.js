@@ -31,8 +31,8 @@ function displayCurrentWeather(city) {
       <div class="fs-2 mb-2"><strong>${name}</strong></div>
       <div class="fs-4"><strong>${day}</strong>, ${hours}</div>
       <div class="d-flex align-items-center justify-content-center">
-      <strong id="currentTemperature" class="fs-1">${temperature}°C = </strong> 
-      <strong id="currentTemperatureFahrenheit"class="fs-1"> ${temperatureFahrenheit}°F</strong>
+      <strong id="currentTemperature" class="fs-1">${temperature}°C</strong> 
+      
 
       <img src="${weatherIcon}" />
       </div>
