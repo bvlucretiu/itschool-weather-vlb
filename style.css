@@ -1,3 +1,45 @@
+@media screen and (max-width: 480px) {
+  body {
+    background-color: rgb(6, 41, 20);
+    color:#fbf24c;
+    .text-primary {
+      color: #49ebe3 !important;
+    }
+    .bg-secondary {
+      margin-top: 0%;
+      margin-left: 1%;
+      margin-right: 1%;
+      background-color: #100664 !important;
+      box-shadow: 1px 1px 1px 2px #12e4f7;
+      border-radius: 7px;
+    }
+    .bg-forecast {
+      max-width: 98%;
+      margin: 3%;
+      background-color: #4c0a60 !important;
+      border-radius: 5px;
+    }
+    .oneWeather {
+      background-color: rgb(5, 56, 54);
+      border: solid 1px;
+      margin: 15px;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 2px 4px #186f6a;
+    }
+    .dayForecast {
+      max-width: 400px;
+      background-color: rgb(27, 41, 123);
+      color: rgb(236, 250, 43);
+      border: solid 1px;
+      margin: 15px;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 2px 5px #44e0b7;
+      text-align: center;
+    }
+  }
+}
 /* Customizam Bootstrap */
 .btn-secondary,
 .btn-secondary:hover,
