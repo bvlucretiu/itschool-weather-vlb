@@ -38,6 +38,7 @@
       box-shadow: 2px 5px #44e0b7;
       text-align: center;
     }
+    
   }
 }
 /* Customizam Bootstrap */
@@ -111,7 +112,7 @@ main {
 
 /* Header */
 header {
-  height: 30vh;
+  height: 15vh;
 }
 .material-icons {
   font-family: "Material Icons";
