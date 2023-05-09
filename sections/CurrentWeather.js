@@ -48,12 +48,12 @@ function displayCurrentWeather(city) {
       } else if (temperature >= 20) {
         document.getElementById("currentTemperature").style.color = "#e2947f";
       }
-      if (temperatureFahrenheit < 68) {
-        document.getElementById("currentTemperatureFahrenheit").style.color =
-          "#07ff6c";
-      } else if (temperatureFahrenheit >= 68) {
-        document.getElementById("currentTemperatureFahrenheit").style.color =
-          "#e2947f";
-      }
+      // if (temperatureFahrenheit < 68) {
+      //   document.getElementById("currentTemperatureFahrenheit").style.color =
+      //     "#07ff6c";
+      // } else if (temperatureFahrenheit >= 68) {
+      //   document.getElementById("currentTemperatureFahrenheit").style.color =
+      //     "#e2947f";
+      // }
     });
 }
