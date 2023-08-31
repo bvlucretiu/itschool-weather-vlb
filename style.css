@@ -158,3 +158,9 @@ header {
   box-shadow: 2px 5px #888888;
   text-align: center;
 }
+.heatTemperature {
+  color: #22e611;
+}
+.coldTemperature {
+  color: #e2947f;
+}
