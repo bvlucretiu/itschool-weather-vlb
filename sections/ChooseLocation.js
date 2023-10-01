@@ -10,6 +10,7 @@ const lazareni = document.querySelector(".dropdown-menu .lazareni");
 const balnaca = document.querySelector(".dropdown-menu .balnaca");
 const ginta = document.querySelector(".dropdown-menu .ginta");
 const cortina_D_Ampezzo = document.querySelector(".dropdown-menu .cortina-dAmpezzo");
+const brescia = document.querySelector(".dropdown-menu .brescia");
 
 function updateCurrentCity(city) {
   // Selectam spatiul de pe ecran dedicat afisarii orasului curent si ii adaugam continut.
@@ -63,4 +64,7 @@ ginta.addEventListener("click", function () {
 });
 cortina_D_Ampezzo.addEventListener("click", function () {
   updateWeather("Cortina d'Ampezzo, IT");
+});
+brescia.addEventListener("click", function () {
+  updateWeather("Brescia, IT");
 });
