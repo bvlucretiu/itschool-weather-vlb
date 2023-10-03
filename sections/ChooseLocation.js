@@ -11,7 +11,7 @@ const balnaca = document.querySelector(".dropdown-menu .balnaca");
 const ginta = document.querySelector(".dropdown-menu .ginta");
 const cortina_D_Ampezzo = document.querySelector(".dropdown-menu .cortina-dAmpezzo");
 const brescia = document.querySelector(".dropdown-menu .brescia");
-const acquafredda = document.querySelector(.dropdown-menu .acquafredda");
+const acquafredda = document.querySelector(".dropdown-menu .acquafredda");
 
 function updateCurrentCity(city) {
   // Selectam spatiul de pe ecran dedicat afisarii orasului curent si ii adaugam continut.
