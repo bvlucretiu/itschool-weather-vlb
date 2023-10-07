@@ -9,6 +9,7 @@ const hidiseludejos = document.querySelector(".dropdown-menu .hidiseludejos");
 const lazareni = document.querySelector(".dropdown-menu .lazareni");
 const balnaca = document.querySelector(".dropdown-menu .balnaca");
 const ginta = document.querySelector(".dropdown-menu .ginta");
+const bors = document.querySelector(".dropdown-menu .bors");
 const cortina_D_Ampezzo = document.querySelector(".dropdown-menu .cortina-dAmpezzo");
 const brescia = document.querySelector(".dropdown-menu .brescia");
 const acquafredda = document.querySelector(".dropdown-menu .acquafredda");
@@ -62,6 +63,9 @@ balnaca.addEventListener("click", function () {
 });
 ginta.addEventListener("click", function () {
   updateWeather("Ginta");
+});
+bors.addEventListener("click", function () {
+  updateWeather("Borș");
 });
 cortina_D_Ampezzo.addEventListener("click", function () {
   updateWeather("Cortina d'Ampezzo, IT");
