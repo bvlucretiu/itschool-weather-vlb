@@ -27,6 +27,17 @@
       padding: 10px;
       box-shadow: 2px 4px #186f6a;
     }
+    .oneWeather .detailsWeatherLvl1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .oneWeather .detailsWeatherLvl1 .detailsWeatherLvl2 {
+      display: flex;
+      flex-direction: column;
+    }
+
     .dayForecast {
       max-width: 400px;
       background-color: #070234 ;
@@ -163,4 +174,10 @@ header {
 }
 .coldTemperature {
   color: #e2947f;
+}
+
+.oneWeather .detailsWeatherLvl1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

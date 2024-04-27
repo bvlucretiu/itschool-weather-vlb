@@ -45,12 +45,17 @@ function displayWeatherForecast(city) {
             <div class="oneWeather">
               <span><b>${preselectLoc}</b></span></br>
               <span>${day}</span></br>
-              <span>${hours}</span>
-              <img src="${weatherIcon}" alt="" />
-              <strong color="red">${temperature} °C</strong>
-              <span>${weatherDescription}! </span>
-              <span> Senzație reală: ${realFeel}°C</span>
 
+              <div class="detailsWeatherLvl1">
+                <span>${hours}</span>
+                <img src="${weatherIcon}" alt="" />
+                
+                <div class="detailsWeatherLvl2">
+                  <strong color="red">${temperature} °C</strong>
+                  <span>${weatherDescription}! </span>
+                  <span> Senzație reală: ${realFeel}°C</span>
+                </div>
+              </div>
             </div>
           `;
         });
